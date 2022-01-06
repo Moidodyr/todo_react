@@ -1,22 +1,29 @@
+import TodoItem from "./TodoItem"
 import { ListStyled, WrapList } from "./TodoListStyled"
 
 
-const Todolist = () => {
+const Todolist = ({todos, toggleTask, removeTask}) => {
     return (
         <ListStyled>
             <WrapList>
-                <li>dklslfkslf</li>
-                <li>dklslfkslf</li>
-                <li>dklslfkslf</li>
-                <li>dklslfkslf</li>
-                <li>dklslfkslf</li>
+                {todos.map(todo => {
+                    return !todo.complete && <TodoItem
+                                                key={todo.id}
+                                                todo={todo}
+                                                toggleTask={toggleTask}
+                                                removeTask={removeTask}
+                                                />
+                })}
             </WrapList>
             <WrapList>
-                <li>dklslfkslf</li>
-                <li>dklslfkslf</li>
-                <li>dklslfkslf</li>
-                <li>dklslfkslf</li>
-                <li>dklslfkslf</li>
+                {todos.map(todo => {
+                    return todo.complete && <TodoItem
+                                                key={todo.id}
+                                                todo={todo}
+                                                toggleTask={toggleTask}
+                                                removeTask={removeTask}
+                                                />
+                })}
             </WrapList>
         </ListStyled>
     )
