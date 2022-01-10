@@ -29,7 +29,7 @@ const TodoForm = ({ addTask }) => {
                 onChange={handleChange}
                 placeholder="Добавьте задачу..."
                 />
-            <Button>submit</Button>
+            <Button>Добавить</Button>
         </FormTask>
     )
 }

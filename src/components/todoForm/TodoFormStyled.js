@@ -7,7 +7,7 @@ export const FormTask = styled.form`
 `
 
 export const InputTask = styled.input`
-    width: 83%;
+    width: calc(100% - 95px);
     padding: 7px 32px 7px 16px;
     border-radius: 4px 0 0 4px;
     border: 2px solid #3174af;
@@ -17,6 +17,7 @@ export const InputTask = styled.input`
 
 export const Button = styled.button`
     padding: 9px 8px;
+    width: 95px;
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;

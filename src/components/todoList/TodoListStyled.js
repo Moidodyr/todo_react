@@ -11,8 +11,10 @@ export const ListStyled = styled.div`
 
 export const WrapList = styled.ul`
     box-shadow: 0px 0px 6px 3px rgba(49, 116, 175, .9) inset;
+    margin-top: 10px;
     width: 300px;
     min-height: 500px;
+    background-color: #fafafa;
 `
 
 export const Item = styled.li`
