@@ -33,6 +33,10 @@ export const Item = styled.li`
     }
 `
 
+export const IconGroup = styled.div`
+    display: flex;
+`
+
 export const Icon = styled(FontAwesomeIcon)`
     margin: 0 5px;
     cursor: pointer;
